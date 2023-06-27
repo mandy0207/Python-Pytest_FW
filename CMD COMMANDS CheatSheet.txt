@@ -1,0 +1,29 @@
+1)py.test---------->                To run all test cases in project from cmd
+2)py.test -v -s ------------------> To run all test cases in project with all outputs or print statements
+3) py.test "filename_with_extension"-v -s ----------------> To run test cases present in selected file
+4)py.test -k "testcase_conventionname" -v -s ------------> To run test cases of particular type in entire project (ex. credit card test cases)
+5) py.test -m smoke -v -s --------------------> In order to run testcases that are marked as smoke {same as tags in BDD}
+6)py.test --html=Reports/Report.html  --self-contained-html  -----> To create pytest html reports
+7) py.test --browser_name chrome --------------> To invoke tests in chrome
+
+
+Annanotations
+1) pytest.mark.smoke -----> Smoke marked test cases
+2) pytest.mark.skip ------> test cases to be skipped is marked in this way
+3)pytest.mark.xfail  ------> test case will run but status will not show up in report
+4)pytest.fixture() ---> In order to execute something in the begining(Setup method)
+5) yield - In order to execute at last
+6) fixtures are used as setup and teardown methods for test cases- conftest file to generalise fixtures
+7)
+
+
+
+
+
+
+
+-K stands for method name
+-s logs in output
+-v stands for more infor or metadata
+-m stands for marked test with any name
+

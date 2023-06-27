@@ -1,0 +1,15 @@
+behave -------------->>   To run all features files
+behave features/featurefilename.feature       ---> to execute particular feature file
+behave features/featurefilename.feature --no-capture   ----> to execute particular feature with logs or print statements as well
+behave features/BookAPI.feature --no-capture --tags=smoke   --------------> to run scenario associated to specific tags
+behave --no-capture -f allure_behave.formatter:AllureFormatter -o AllureReports   --> To generate allure reports in json format
+
+Next step is to convert allure json reports into html format and host it on server  
+
+Move to the path of allure commandline bin directory and hit following command
+allure serve % path of json reports %
+
+example : allure serve C:\Users\msingh\PycharmProjects\pythonProject1\BackendAutomation\AllureReports
+
+
+
